@@ -164,10 +164,10 @@ function renderList() {
     meta.className = "car-meta";
     meta.textContent =
       "SKU: " +
-      (car.sku || "—") +
-      " • Series: " +
-      (car.series || "—") +
-      " • Packaging: " +
+      (car.sku || " ") +
+      " | Series: " +
+      (car.series || " ") +
+      " | Packaging: " +
       car.packaging;
     li.appendChild(meta);
 
