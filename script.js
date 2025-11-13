@@ -206,4 +206,13 @@ function renderList() {
   });
 }
 
+// Apply edits to selected car using the editor form
+applyEdit.addEventListener("click", function () {
+  if (selectedIndex == null) return;
+  const car = cars[selectedIndex];
 
+  car.updateColor(editColor.value);
+  car.updatePrice(editPrice.value);
+
+  renderList();
+});
