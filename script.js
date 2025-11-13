@@ -142,7 +142,7 @@ form.addEventListener("submit", function (e) {
   editor.hidden = true;
   form.reset();
 
-  // Re-render list
+  // Call the Re-render list function to update display
   renderList();
 });
 
