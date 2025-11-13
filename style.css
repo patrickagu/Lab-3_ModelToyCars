@@ -106,3 +106,80 @@ button:hover {
 button:active {
   transform: translateY(1px);
 }
+
+/* Output section */
+#output {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+#output h2 {
+  margin-top: 0;
+}
+
+/* Car list */
+#carList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.car-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+  background: #fff;
+}
+
+.car-card h4 {
+  margin: 0;
+}
+
+.car-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.card-actions button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.card-actions button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* Editor section */
+#editor {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+#editor h3 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  color: var(--muted);
+  text-align: center;
+  padding-bottom: 24px;
+}
