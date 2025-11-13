@@ -99,7 +99,7 @@ ToyCar.prototype.updatePrice = function (newPrice) {
   }
 };
 
-// State: list of created cars and selected index for editor
+// list of created cars and selected index for editor
 const cars = [];
 let selectedIndex = null;
 
@@ -111,4 +111,7 @@ const editColor = document.getElementById("editColor");
 const editPrice = document.getElementById("editPrice");
 const applyEdit = document.getElementById("applyEdit");
 
+// Handle form submission to create a new ToyCar and render
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
