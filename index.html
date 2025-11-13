@@ -11,3 +11,27 @@
     <h1>🚗 Model Toy Car Builder</h1>
     <p>Create and customize a toy car object.</p>
   </header>
+
+<!-- Form to create a ToyCar object instance -->
+  <main>
+    <form id="carForm" aria-label="Toy car creator">
+      <fieldset>
+        <legend>Car identity</legend>
+        <label for="brand">Brand</label>
+        <input id="brand" name="brand" type="text" placeholder="e.g., Greenlight" required>
+
+        <label for="model">Model</label>
+        <input id="model" name="model" type="text" placeholder="e.g., Corvette C8" required>
+
+        <label for="year">Year</label>
+        <input id="year" name="year" type="number" min="1900" max="2100" value="2021" required>
+
+        <label for="scale">Scale</label>
+        <select id="scale" name="scale" required>
+          <option value="1:64">1:64</option>
+          <option value="1:43">1:43</option>
+          <option value="1:32">1:32</option>
+          <option value="1:24">1:24</option>
+          <option value="1:18">1:18</option>
+        </select>
+      </fieldset>
